@@ -4,7 +4,7 @@ import connexion
 app = connexion.App(__name__, specification_dir="./")
 app.add_api("swagger.yml")
 
-# C onnect the URL route "/" to the home() function
+# Connect the URL route "/" to the home() function
 @app.route("/")
 def home():
     return render_template("home.html")
