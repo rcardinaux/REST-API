@@ -22,4 +22,9 @@ REST-API
 * *swagger.yml* is the **API Configuration File**
 
 ### Part 2
-* Serializer = To convert complex data types to and from Python data types, you’ll need a serializer. For this tutorial, you’ll use Flask-Marshmallow.
+* Serializer = To convert complex data types to and from Python data types, you’ll need a serializer. For this tutorial, you’ll use [Flask-Marshmallow](https://flask-marshmallow.readthedocs.io/en/latest/).
+* **SQLAlchemy** will sanitize user data (Little Bobby tables) for you before creating SQL statements. It’s another big advantage and a reason to use SQLAlchemy when working with databases.
+  * SQLAlchemy is a big project and provides a lot of functionality to work with databases using Python. One of the features that it provides is an object-relational mapper (ORM). This ORM enables you to interact with the person database table in a more Pythonic way by mapping a row of fields from the database table to a Python object.
+* **SQL** = structured query language
+  * Unlike programming languages like Python, SQL doesn’t define how to get the data. SQL describes what data is desired and leaves the how up to the database engine.
+  * SQLite is a widely used **relational database management system (RDBMS)** that doesn’t need a SQL server to work
